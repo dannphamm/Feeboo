@@ -27,8 +27,22 @@ class LoginViewController: UIViewController {
             print("we tried to sign in")
             if error != nil {
                 print("hey we have an error:\(String(describing: error))")
+                
+        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+            print("we tried to create a user")
+            
+            if error != nil {
+                print("hey we have an error:\(String(describing: error))")
+                print("signed in successfully")
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+                
+            } else {
+                print("created user successfully")
+            }
+        })
             } else {
                 print("signed in successfully")
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
             }
         }
     }

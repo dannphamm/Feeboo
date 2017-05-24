@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2843FA1E1ED603BB00CBE1B4 /* AccountListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843FA1D1ED603BB00CBE1B4 /* AccountListsViewController.swift */; };
+		2843FA201ED606A600CBE1B4 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843FA1F1ED606A600CBE1B4 /* PicturesViewController.swift */; };
 		28F526251ED5315B0049439E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F526241ED5315B0049439E /* AppDelegate.swift */; };
 		28F526271ED5315B0049439E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F526261ED5315B0049439E /* LoginViewController.swift */; };
 		28F5262A1ED5315B0049439E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F526281ED5315B0049439E /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2843FA1C1ED602E500CBE1B4 /* FeeBoo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeeBoo.entitlements; sourceTree = "<group>"; };
+		2843FA1D1ED603BB00CBE1B4 /* AccountListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountListsViewController.swift; sourceTree = "<group>"; };
+		2843FA1F1ED606A600CBE1B4 /* PicturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 		28F526211ED5315B0049439E /* FeeBoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeeBoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F526241ED5315B0049439E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28F526261ED5315B0049439E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +70,11 @@
 		28F526231ED5315B0049439E /* FeeBoo */ = {
 			isa = PBXGroup;
 			children = (
+				2843FA1C1ED602E500CBE1B4 /* FeeBoo.entitlements */,
 				28F526241ED5315B0049439E /* AppDelegate.swift */,
 				28F526261ED5315B0049439E /* LoginViewController.swift */,
+				2843FA1D1ED603BB00CBE1B4 /* AccountListsViewController.swift */,
+				2843FA1F1ED606A600CBE1B4 /* PicturesViewController.swift */,
 				28F526281ED5315B0049439E /* Main.storyboard */,
 				28F5262E1ED5315B0049439E /* Assets.xcassets */,
 				28F526301ED5315B0049439E /* LaunchScreen.storyboard */,
@@ -131,6 +139,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = KY568F6DG9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -219,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2843FA1E1ED603BB00CBE1B4 /* AccountListsViewController.swift in Sources */,
 				28F5262D1ED5315B0049439E /* FeeBoo.xcdatamodeld in Sources */,
+				2843FA201ED606A600CBE1B4 /* PicturesViewController.swift in Sources */,
 				28F526271ED5315B0049439E /* LoginViewController.swift in Sources */,
 				28F526251ED5315B0049439E /* AppDelegate.swift in Sources */,
 			);
