@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class ViewController: UIViewController {
 
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
 
     @IBAction func loginTapped(_ sender: Any) {
     
+     Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (User, error) in
+         print ("we tried to sign in")
+        if error != nil {
+            print("we have an error:\(String(describing: error))")
+        } else{
+            print("sign in sucessfully")
+        }
+        }
     }
 
 }
