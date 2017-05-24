@@ -13,6 +13,8 @@
 		28F5262D1ED5315B0049439E /* FeeBoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28F5262B1ED5315B0049439E /* FeeBoo.xcdatamodeld */; };
 		28F5262F1ED5315B0049439E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F5262E1ED5315B0049439E /* Assets.xcassets */; };
 		28F526321ED5315B0049439E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F526301ED5315B0049439E /* LaunchScreen.storyboard */; };
+		28F5263A1ED531F60049439E /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 28F526391ED531F60049439E /* GoogleService-Info (3).plist */; };
+		94D038E377FD5565BE6534FE /* Pods_FeeBoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E971BA167DE9B6A27A02CACD /* Pods_FeeBoo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		28F5262E1ED5315B0049439E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F526311ED5315B0049439E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28F526331ED5315B0049439E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F526391ED531F60049439E /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (3).plist"; sourceTree = "<group>"; };
+		3DD0B2FCDBB3F52857D9D0D9 /* Pods-FeeBoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeeBoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeeBoo/Pods-FeeBoo.release.xcconfig"; sourceTree = "<group>"; };
+		528A3E4842CD57A94085EC93 /* Pods-FeeBoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeeBoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeeBoo/Pods-FeeBoo.debug.xcconfig"; sourceTree = "<group>"; };
+		E971BA167DE9B6A27A02CACD /* Pods_FeeBoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeeBoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D038E377FD5565BE6534FE /* Pods_FeeBoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				28F526231ED5315B0049439E /* FeeBoo */,
 				28F526221ED5315B0049439E /* Products */,
+				4D3406A1BA0F00CEE41C9F1A /* Pods */,
+				9B10AF7DA584FE04A2FB2AE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				28F526301ED5315B0049439E /* LaunchScreen.storyboard */,
 				28F526331ED5315B0049439E /* Info.plist */,
 				28F5262B1ED5315B0049439E /* FeeBoo.xcdatamodeld */,
+				28F526391ED531F60049439E /* GoogleService-Info (3).plist */,
 			);
 			path = FeeBoo;
+			sourceTree = "<group>";
+		};
+		4D3406A1BA0F00CEE41C9F1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				528A3E4842CD57A94085EC93 /* Pods-FeeBoo.debug.xcconfig */,
+				3DD0B2FCDBB3F52857D9D0D9 /* Pods-FeeBoo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B10AF7DA584FE04A2FB2AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E971BA167DE9B6A27A02CACD /* Pods_FeeBoo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28F526361ED5315B0049439E /* Build configuration list for PBXNativeTarget "FeeBoo" */;
 			buildPhases = (
+				730EF9426E17625BF087C69A /* [CP] Check Pods Manifest.lock */,
 				28F5261D1ED5315B0049439E /* Sources */,
 				28F5261E1ED5315B0049439E /* Frameworks */,
 				28F5261F1ED5315B0049439E /* Resources */,
+				8B26C7A7FC6AE026ADC293B9 /* [CP] Embed Pods Frameworks */,
+				C4971DB1FD492DE704C9F066 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F526321ED5315B0049439E /* LaunchScreen.storyboard in Resources */,
+				28F5263A1ED531F60049439E /* GoogleService-Info (3).plist in Resources */,
 				28F5262F1ED5315B0049439E /* Assets.xcassets in Resources */,
 				28F5262A1ED5315B0049439E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		730EF9426E17625BF087C69A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B26C7A7FC6AE026ADC293B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeeBoo/Pods-FeeBoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4971DB1FD492DE704C9F066 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeeBoo/Pods-FeeBoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28F5261D1ED5315B0049439E /* Sources */ = {
@@ -265,6 +344,7 @@
 		};
 		28F526371ED5315B0049439E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528A3E4842CD57A94085EC93 /* Pods-FeeBoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KY568F6DG9;
@@ -278,6 +358,7 @@
 		};
 		28F526381ED5315B0049439E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD0B2FCDBB3F52857D9D0D9 /* Pods-FeeBoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KY568F6DG9;
